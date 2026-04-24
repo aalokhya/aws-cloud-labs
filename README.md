@@ -25,10 +25,10 @@ The objective of this project is to ensure that a web application remains availa
 ## 📸 Screenshots
 
 ### 🔹 Application Running (Load Balanced)
-![Application Screenshot](images/app-running.png)
+![Application Screenshot](app-running.png)
 
 ### 🔹 Configuration & Scaling
-![Configuration Screenshot](images/configuration.png)
+![Configuration Screenshot](configuration.png)
 
 
 ## 🔄 Key Features

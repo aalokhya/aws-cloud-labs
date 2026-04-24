@@ -1,19 +1,70 @@
-# AWS Cloud Labs Portfolio
+# 🚀 AWS High Availability Web Application
 
-This repository contains hands-on AWS cloud labs completed as part of cloud training and self-learning.
+This project demonstrates how to build a highly available and scalable web application on AWS using EC2, Application Load Balancer, and Auto Scaling.
 
-## Labs Included
+## 📌 Overview
 
-1. IAM User and Group Management
-2. EC2 Instance Management
-3. S3 Storage Access Control
-4. VPC Networking Setup
-5. Cloud Security Policies
+The objective of this project is to ensure that a web application remains available, fault-tolerant, and scalable under varying loads by distributing traffic and automatically scaling resources.
 
-## Skills Demonstrated
+## 🛠️ Services Used
 
-- Identity and Access Management (IAM)
-- EC2 Instance Management
-- Amazon S3 Storage
-- AWS Networking
-- Cloud Security Policies
+- Amazon EC2 – Hosts the web application  
+- Application Load Balancer (ALB) – Distributes incoming traffic  
+- Auto Scaling Group (ASG) – Automatically scales instances  
+- Amazon S3 – Stores application files  
+- IAM Role – Provides secure access to AWS services  
+- CloudWatch – Monitors and triggers scaling  
+
+## ⚙️ Architecture
+
+- Application deployed across multiple Availability Zones  
+- Target Group configured for routing traffic  
+- Launch Template created with user data script for automation  
+- Auto Scaling Group attached to Load Balancer  
+
+## 📸 Screenshots
+
+### 🔹 Application Running (Load Balanced)
+![Application Screenshot](images/app-running.png)
+
+### 🔹 Configuration & Scaling
+![Configuration Screenshot](images/configuration.png)
+
+
+## 🔄 Key Features
+
+- High Availability using multi-AZ deployment  
+- Load balancing across multiple EC2 instances  
+- Automatic scaling based on CPU utilization  
+- Fault tolerance and improved reliability  
+
+---
+
+## 🧪 Testing
+
+- Verified load balancing by observing Availability Zone changes  
+- Performed stress testing to simulate high traffic  
+- Observed automatic scaling of instances  
+
+
+## ⚠️ Challenges Faced
+
+- Unhealthy targets due to incorrect user data configuration  
+- Fixed by updating:
+  - S3 bucket names  
+  - AWS region  
+- Verified security groups and health check settings  
+
+
+## 🎯 Outcome
+
+- Successfully implemented a scalable and fault-tolerant architecture  
+- Achieved automatic scaling and load distribution  
+- Ensured application availability under load  
+
+
+## 📚 Learnings
+
+- Hands-on experience with AWS core services  
+- Understanding of load balancing and auto scaling  
+- Debugging real-world deployment issues  

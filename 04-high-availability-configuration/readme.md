@@ -2,11 +2,6 @@
 
 This project shows how I set up a highly available web application on AWS using a load balancer and auto scaling.
 
-## 🎥 Demo Video
-Watch the full implementation here:  
-👉 https://your-youtube-link-here
-
-
 ## What I did
 - Reviewed an existing EC2 web app  
 - Created a target group and configured health checks  
